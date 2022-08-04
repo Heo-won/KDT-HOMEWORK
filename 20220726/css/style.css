@@ -1,0 +1,226 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+/* font-family: 'Architects Daughter', cursive;
+font-family: 'Nanum Gothic', sans-serif; */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Architects+Daughter&family=Cardo:ital@1&family=Cinzel:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Edu+TAS+Beginner:wght@400;500;600;700&family=Fredericka+the+Great&family=Lato:ital,wght@1,100;1,300;1,400;1,900&family=Nanum+Gothic:wght@400;700;800&family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700&family=Shadows+Into+Light&family=Square+Peg&display=swap');
+/* font-family: 'Alata', sans-serif;
+font-family: 'Architects Daughter', cursive;
+font-family: 'Cardo', serif;
+font-family: 'Cinzel', serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Edu TAS Beginner', cursive;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Square Peg', cursive; */
+
+/* RESET */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+header {
+    position: relative;
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid rgb(178, 178, 178) ;
+    justify-content: space-between;
+    padding: 5vh 5vw;
+    align-items: center;
+    z-index: 999;
+}
+
+header #snb {
+    display: none;
+}
+
+
+
+header h1 a {
+    font: bold 30px/1 "Alata";
+    color: rgb(209, 245, 131);
+    margin-left: 30px;
+}
+
+header #gnb {
+    display: flex;
+}
+
+header #gnb li {
+    margin: 0px 50px ;
+
+}
+
+header #gnb li a {
+    font: 15px/1 "Alata";
+    color: rgb(209, 245, 131);
+    letter-spacing: 1px
+}
+
+/* SNS */
+header .sns {
+    display: flex;
+}
+
+header .sns li {
+    margin:0px 10px ;
+}
+
+header .sns li a {
+    font-size: 20px;
+    color: rgba(209, 245, 131, 0.7);
+}
+
+/* VIDEO */
+figure {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top:0px;
+    left:0px;
+    overflow:hidden;
+    z-index: 1;
+}
+
+figure video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+figure .text {
+    position: absolute;
+    /* left: 6vw; */
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+figure .text p {
+    font: normal 10vw/1 "Playfair Display";
+    color: rgb(209, 245, 131);
+    
+
+}
+
+.figure_1 {
+    margin-left: 15vw;
+    margin-top: 70px;
+}
+
+.figure_2 {
+    margin-left: 60vw;
+    margin-top: 30px;
+}
+
+figure .text ul {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 60vw;
+}
+
+figure .text ul li {
+    margin: 0px 30px;
+
+}
+
+figure .text ul li i { 
+    font-size: 20px;
+    color: rgb(209, 245, 131);
+    margin-right: 10px;
+}
+
+figure .text ul li strong {
+    font: 14px/1 "Playfair Display";
+    font-weight: bold;
+    color: rgb(209, 245, 131);
+    letter-spacing: 1px;
+    margin-left: 55px;
+
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    font: 12px/1 "arial";
+    color: rgb(209, 245, 131);
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 5vh 5wh;
+    z-index: 2;
+}
+
+/* MOBILE */
+@media screen and (max-width: 800px) {
+    header #gnb {
+        display: none;
+    }
+
+    header .sns {
+        display: none;
+    }
+
+    header #snb {
+        display: block;
+        color: rgb(209, 245, 131);
+    }
+
+    header #snb .sub_menu {
+        position: absolute;
+        right: 5vw;
+        padding: 10px 25px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 1px solid rgb(209, 245, 131);
+        border-radius: 10px;
+        text-align: right;
+        opacity: 1;
+        transition: 0.4s;
+    }
+
+    header #snb .sub_menu.hide {
+        opacity: 0;
+    }
+
+    header #snb .btn_menu {
+        color: rgb(209, 245, 131);
+    }
+ 
+    header #snb .sub_menu li {
+        padding: 10px 0px;
+        font: 16px/1 "Shadows Into Light";
+        color: rgb(209, 245, 131);
+    }
+    
+    header #snb .sub_menu li a {
+        color: rgb(209, 245, 131);
+    }
+    
+    header #snb .sub_menu li a i {
+        margin-left: 8px;
+    }
+    
+    figure .text p {
+        font-size: 15vw;
+    }
+}
+
+

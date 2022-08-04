@@ -1,0 +1,65 @@
+/* COMMON */
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+/* FONTS */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+  font-size: 100px;
+}
+
+/* HEADER */
+header {
+  background-color: #f6f5ef;
+  border: 1px solid #c8c8c8;
+}
+
+header .inner {
+  position: relative;
+  display: flex;
+  width: 1100px;
+  height: 120px;
+  padding: 0 32px;
+  margin: 0 auto;
+}
+
+/* sub_logo */
+header .inner .sub_logo {
+  display: block;
+  height: 75px;
+  margin: auto 0;
+  top: 0;
+  bottom: 0;
+  left: 100px;
+}
+
+/* sub_menu */
+header .inner .sub_menu {
+    display: flex;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 100px;
+}
+header .inner .sub_menu li {
+    padding: 10px 15px;
+    
+}
+header .inner .sub_menu li a {
+    color: #656565;
+    font-size: 12px;
+}
+
+/* sub_search */
+header .inner .sub_search {
+}
+header .inner .sub_search input {
+}
+header .inner .sub_search input span {
+}

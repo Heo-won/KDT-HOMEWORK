@@ -1,0 +1,201 @@
+/* COMMON */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+* {
+  font-family: "Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif";
+}
+
+div {
+  font-family: "Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif";
+}
+
+body {
+  font-size: 16px;
+  background-color: #ded5fe;
+}
+
+a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+/* HEADER */
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
+header:hover {
+  background-color: white;
+}
+
+header .inner {
+  position: relative;
+  display: flex;
+  width: 1100px;
+  height: 72px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+/* HEADER LOGO */
+header .inner .header__logo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 32px;
+  left: 0px;
+  padding: 0 24px;
+}
+
+header .inner .header__logo img {
+  width: 105px;
+  height: 32px;
+}
+
+/* HEAdER MENU */
+header .inner .header__menu {
+  display: flex;
+  position: absolute;
+  margin: auto;
+  left: 140px;
+  top: 0;
+  bottom: 0;
+  height: 32px;
+  /*left: 50%;
+  transform: translate(-50%, 0);
+   위 50%은 부모요소의 50% 밑에는 자기요소의 50%
+  absolute의 중앙정렬 하는 방법 */
+}
+
+header .inner .header__menu li {
+  padding: 8px 16px;
+  /* margin-left: 20px; */
+}
+
+header .inner .header__menu li a {
+  font-size: 16px;
+  color: #4a5056;
+  border: 1px solid transparent;
+  padding: 8px;
+}
+
+header .inner .header__menu li a:hover {
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  background-color: #f1f3f5;
+  border-radius: 3px;
+  color: #4a5056;
+  cursor: pointer;
+  padding: 8px;
+}
+
+
+/* ARROW DOWN */
+
+header .inner .header__menu li a .arrow {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 13px;
+  margin-bottom: 4px;
+}
+
+header .inner .header__menu li a .down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+header .inner .header__menu li a .down:hover {
+  transform: rotate(590deg);
+  transition: 0.5s;
+  
+  
+}
+
+/* HEADER BTN */
+header .inner .header__btn {
+  position: absolute;
+  display: flex;
+  right: 0px;
+  height: 32px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+header .inner .header__btn .header__btn__login {
+  padding: 8px 16px;
+  margin-right: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+header .inner .header__btn .header__btn__register {
+  padding: 8px 16px;
+  box-sizing: border-box;
+  border: 1px solid #dbdbdb;
+  background-color: #353a3f;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+header .inner .header__btn .header__btn__login:hover {
+  text-decoration: underline;
+}
+
+header .inner .header__btn .header__btn__register:hover {
+  opacity: 0.8;
+}
+
+/* Main MENU */
+
+header .inner .header__menu .item__contents__menu {
+  
+}
+
+
+
+header .inner .header__menu .item__contents .item__contents__menu {
+  background-color: skyblue;
+  padding: 20px 0;
+  width: 100%;
+  height: 1000px;
+  margin-top: 59px;
+
+}
+
+header .inner .header__menu .item__contents .item__contents__menu .inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header .header__menu .item__contents .item__contents__menu .inner>li {
+  width: 200px;
+  padding: px;
+}
+
+header .header__menu .item__contents .item__contents__menu .inner>li>a {
+  display: block;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #222529;
+  font-weight: bold;
+}
+
+header .header__menu .item__contents .item__contents__menu .inner li>ul>li {
+  color: black;
+  font-size: 12px;
+  font-weight: bold; 
+}
+
+header .header__menu .item__contents .item__contents__menu .inner li>ul>p {
+  color: #7e7c7c;
+  font-size: 12px;
+  margin-left: 10px; 
+}
+

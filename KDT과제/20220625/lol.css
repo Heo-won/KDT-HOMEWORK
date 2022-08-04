@@ -1,0 +1,149 @@
+body {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .container .heroes {
+    display: flex;
+    max-width: 700px;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .container .heroes .hero {
+    width: 100px;
+    height: 100px;
+    margin: 4px;
+    border: 3px solid white;
+    background-color: grey;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .container .heroes .hero:hover {
+    border: 5px double yellow;
+    z-index: 1;
+  }
+
+  .container .heroes .hero:active {
+    filter: grayscale(80%);
+    border: 3px solid yellow;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .container .heroes .hero .image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: grey;
+  }
+
+  .container .heroes .hero-1:nth-child(1) .image {
+    background-image: url(./champions/champions/01.png);
+  }
+  .container .heroes .hero-1:nth-child(2) .image {
+    background-image: url(./champions/champions/02.png);
+  }
+  .container .heroes .hero-1:nth-child(3) .image {
+    background-image: url(./champions/champions/03.png);
+  }
+  .container .heroes .hero-1:nth-child(4) .image {
+    background-image: url(./champions/champions/04.png);
+  }
+  .container .heroes .hero-1:nth-child(5) .image {
+    background-image: url(./champions/champions/05.png);
+  }
+  .container .heroes .hero-1:nth-child(6) .image {
+    background-image: url(./champions/champions/06.png);
+  }
+  .container .heroes .hero-1:nth-child(7) .image {
+    background-image: url(./champions/champions/07.png);
+  }
+  .container .heroes .hero-1:nth-child(8) .image {
+    background-image: url(./champions/champions/08.png);
+  }
+  .container .heroes .hero-1:nth-child(9) .image {
+    background-image: url(./champions/champions/09.png);
+  }
+  .container .heroes .hero-1:nth-child(10) .image {
+    background-image: url(./champions/champions/10.png);
+  }
+  .container .heroes .hero-1:nth-child(11) .image {
+    background-image: url(./champions/champions/11.png);
+  }
+  .container .heroes .hero-1:nth-child(12) .image {
+    background-image: url(./champions/champions/12.png);
+  }
+  .container .heroes .hero-1:nth-child(13) .image {
+    background-image: url(./champions/champions/13.png);
+  }
+  .container .heroes .hero-1:nth-child(14) .image {
+    background-image: url(./champions/champions/14.png);
+  }
+  .container .heroes .hero-1:nth-child(15) .image {
+    background-image: url(./champions/champions/15.png);
+  }
+  .container .heroes .hero-1:nth-child(16) .image {
+    background-image: url(./champions/champions/16.png);
+  }
+  .container .heroes .hero-1:nth-child(17) .image {
+    background-image: url(./champions/champions/17.png);
+  }
+  .container .heroes .hero-1:nth-child(18) .image {
+    background-image: url(./champions/champions/18.png);
+  }
+  .container .heroes .hero-1:nth-child(19) .image {
+    background-image: url(./champions/champions/19.png);
+  }
+  .container .heroes .hero-1:nth-child(20) .image {
+    background-image: url(./champions/champions/20.png);
+  }
+  .container .heroes .hero-1:nth-child(21) .image {
+    background-image: url(./champions/champions/21.png);
+  }
+  .container .heroes .hero-1:nth-child(22) .image {
+    background-image: url(./champions/champions/22.png);
+  }
+  .container .heroes .hero-1:nth-child(23) .image {
+    background-image: url(./champions/champions/23.png);
+  }
+  .container .heroes .hero-1:nth-child(24) .image {
+    background-image: url(./champions/champions/24.png);
+  }
+  .container .heroes .hero-1:nth-child(25) .image {
+    background-image: url(./champions/champions/25.png);
+  }
+  .container .heroes .hero-1:nth-child(26) .image {
+    background-image: url(./champions/champions/26.png);
+  }
+  .container .heroes .hero-1:nth-child(27) .image {
+    background-image: url(./champions/champions/27.png);
+  }
+  .container .heroes .hero-1:nth-child(28) .image {
+    background-image: url(./champions/champions/28.png);
+  }
+  .container .heroes .hero-1:nth-child(29) .image {
+    background-image: url(./champions/champions/29.png);
+  }
+  .container .heroes .hero-1:nth-child(30) .image {
+    background-image: url(./champions/champions/30.png);
+  }
+
+  span {
+    display: inline-block;
+    transform: translateY(-5px);
+    font-size: small;
+    font-weight: 400;
+    color: white;
+    white-space: nowrap;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  
